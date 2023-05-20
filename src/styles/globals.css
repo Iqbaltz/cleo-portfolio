@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: "Idealist";
+  src: url("/fonts/Idealist.otf") format("opentype");
+  /* You can add more font properties here */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +24,19 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Montserrat", sans-serif;
+}
+
+.idealist {
+  font-family: "Idealist";
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #6f5b3e !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #6f5b3e !important;
 }
