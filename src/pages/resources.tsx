@@ -6,7 +6,9 @@ export default function ResourcesPage() {
     <Layout>
       <div className="h-screen">
         <div className="flex justify-center items-center h-full">
-          <h1 className="text-4xl idealist">This page is under construction</h1>
+          <h1 className="text-3xl lg:text-4xl text-center idealist">
+            This page is under construction
+          </h1>
         </div>
       </div>
     </Layout>

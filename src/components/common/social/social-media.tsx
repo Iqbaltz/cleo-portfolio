@@ -36,7 +36,7 @@ export default function SocialMedia({
     <div
       className={`bg-[url(/images/social-home.png)] bg-cover p-8 py-32 min-h-[480px] -mb-1 ${className}`}
     >
-      <div className={`flex justify-${position} max-w-[1400px] mx-auto`}>
+      <div className={`flex lg:justify-${position} max-w-[1400px] mx-auto`}>
         <div className="idealist text-white">
           <h2 className="text-3xl lg:text-4xl">Stay connected with me</h2>
           <p className="text-xl">Follow me on Social Media</p>

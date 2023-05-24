@@ -46,16 +46,16 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-40">
+    <section className="px-4 py-16 lg:py-40">
       <div className="max-w-[1440px] mx-auto">
-        <h1 className="text-4xl idealist">
+        <h1 className="text-3xl selection:lg:text-4xl idealist">
           Take the first steps to achieving growth
         </h1>
         <div className="flex flex-wrap justify-center">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col w-[300px] mx-4 bg-white shadow-md mt-12"
+              className="flex flex-col w-full md:w-[300px] md:mx-4 bg-white shadow-md mt-6 lg:mt-12"
             >
               <div className="bg-secondary w-full h-32"></div>
               <div className="p-4 flex flex-col justify-between grow">

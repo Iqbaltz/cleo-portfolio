@@ -40,7 +40,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20">
+    <section className="px-4 py-8 lg:px-0 lg:py-20">
       <div className="max-w-[800px] mx-auto">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="mb-8">
