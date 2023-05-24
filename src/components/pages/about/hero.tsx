@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex">
-      <div className="flex justify-center items-center w-1/2">
+    <section className="min-h-screen flex flex-col items-center px-4 lg:px-0 lg:flex-row">
+      <div className="flex justify-center items-center lg:w-1/2 mt-40 lg:mt-0">
         <Image
           width={520}
           height={780}
@@ -12,11 +12,11 @@ export default function Hero() {
           src="/images/about-hero.png"
           alt="about"
         />
-        <div className="w-[520px] h-[780px] top-0 left-0 bg-primary absolute -z-10"></div>
+        <div className="w-[78%] h-1/2 lg:w-[520px] lg:h-[780px] top-0 left-0 bg-primary absolute -z-10"></div>
       </div>
-      <div className="flex justify-start items-center w-1/2">
+      <div className="flex justify-start items-center py-10 lg:py-0 lg:w-1/2">
         <div className="max-w-[600px]">
-          <h1 className="text-4xl mb-8 font-semibold text-primary">
+          <h1 className="text-3xl lg:text-4xl mb-8 font-semibold text-primary">
             Hi, I’m Cleopatra
           </h1>
           <p className="mt-4">

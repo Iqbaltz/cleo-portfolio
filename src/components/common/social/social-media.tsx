@@ -34,7 +34,7 @@ export default function SocialMedia({
 }: ISocialMedia) {
   return (
     <div
-      className={`bg-[url(/images/social-home.png)] bg-cover p-8 py-32 min-h-[480px] ${className}`}
+      className={`bg-[url(/images/social-home.png)] bg-cover p-8 py-32 min-h-[480px] -mb-1 ${className}`}
     >
       <div className={`flex justify-${position} max-w-[1400px] mx-auto`}>
         <div className="idealist text-white">
