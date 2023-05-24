@@ -88,12 +88,12 @@ export default function Navbar() {
           openMenu ? "" : "-translate-x-full"
         } fixed top-0 right-0 w-full h-full z-20`}
       >
-        <nav className="mt-40 mx-12">
+        <nav className="mt-40 mx-4 lg:mx-12">
           <ul className="flex flex-col h-full">
             {menus.map((menu, index) => (
               <li
                 key={index}
-                className="text-5xl font-semibold text-primary mb-8 cursor-pointer"
+                className="text-3xl lg:text-5xl font-semibold text-primary mb-8 cursor-pointer"
               >
                 <Link href={menu.link} className="hover:underline">
                   {menu.name}

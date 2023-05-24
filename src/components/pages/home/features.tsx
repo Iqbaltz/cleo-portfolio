@@ -26,7 +26,7 @@ const features = [
 export default function Features() {
   return (
     <section className="bg-secondary px-4 lg:px-0 py-12 lg:py-20">
-      <h1 className="idealist text-primary text-4xl text-center">
+      <h1 className="idealist text-primary text-3xl lg:text-4xl text-center">
         Achieve Professional and Business Growth
       </h1>
       <div className="flex flex-col lg:flex-row lg:items-start items-center justify-center py-8 lg:py-16">

@@ -55,7 +55,7 @@ export default function Tetimonials() {
 
   return (
     <section className="py-16 text-center">
-      <h1 className="idealist text-4xl mb-8 text-center text-primary">
+      <h1 className="idealist text-3xl lg:text-4xl mb-8 text-center text-primary">
         What my clients say
       </h1>
       <img src="/svg/quote.svg" alt="quote" className="mx-auto" />

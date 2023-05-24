@@ -10,11 +10,18 @@ export default function Footer() {
 
   return (
     <footer className="bg-black flex flex-col justify-center items-center p-8 text-white relative">
-      <img src="/svg/logo-footer.svg" alt="logo-footer" />
-      <p className="text-light mt-2 text-sm">
+      <img
+        src="/svg/logo-footer.svg"
+        className="w-40 lg:w-48"
+        alt="logo-footer"
+      />
+      <p className="text-light mt-2 text-sm text-center">
         © 2023 Cleopatra Ogharadukun. All rights reserved.
       </p>
-      <div className="cursor-pointer animate-pulse" onClick={scrollToTop}>
+      <div
+        className="cursor-pointer animate-pulse hidden lg:block"
+        onClick={scrollToTop}
+      >
         <img
           src="/svg/arrow-up.svg"
           alt="arrow"

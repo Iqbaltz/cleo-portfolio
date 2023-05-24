@@ -20,12 +20,12 @@ export default function hero() {
         />
         <div className="absolute h-[693px] w-full lg:w-[540px] bg-secondary bottom-0 left-0 -z-10"></div>
       </div>
-      <div className="flex flex-col w-full lg:w-1/2 justify-between pb-16 px-4 md:px-8 lg:py-40 lg:pl-16 lg:pr-20">
+      <div className="flex flex-col w-full lg:w-1/2 justify-between pb-8 lg:pb-16 px-4 md:px-8 lg:py-40 lg:pl-16 lg:pr-20">
         <div className="mt-8">
-          <h1 className="idealist text-6xl text-primary mb-8">
+          <h1 className="idealist text-4xl lg:text-6xl text-primary mb-4 lg:mb-8">
             Cleopatra Ogharadukun
           </h1>
-          <p className="font-medium text-xl lg:max-w-[560px] mb-12">
+          <p className="font-medium lg:text-xl lg:max-w-[560px] mb-6 lg:mb-12">
             Hi! I am Cleopatra. I work with corporate executives and small
             business owners to Develop the Right Mindset, Communicate their
             Value, and Achieve Sustainable Professional and Business Growth.
@@ -34,10 +34,10 @@ export default function hero() {
             <Button>Work with me</Button>
           </Link>
         </div>
-        <div className="flex justify-between items-end mt-12 lg:mt-0 lg:mb-8">
+        <div className="flex justify-between items-end mt-8 lg:mt-0 lg:mb-8">
           <a
             href="#"
-            className="text-primary font-semibold italic text-2xl max-w-[560px]"
+            className="text-primary font-semibold italic lg:text-2xl max-w-[560px]"
           >
             Learn how the right packaging can help you attract the best value{" "}
             <img

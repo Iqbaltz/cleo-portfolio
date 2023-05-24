@@ -38,7 +38,7 @@ export default function SocialMedia({
     >
       <div className={`flex justify-${position} max-w-[1400px] mx-auto`}>
         <div className="idealist text-white">
-          <h2 className="text-4xl">Stay connected with me</h2>
+          <h2 className="text-3xl lg:text-4xl">Stay connected with me</h2>
           <p className="text-xl">Follow me on Social Media</p>
           <div className="flex mt-3">
             {socials.map((social, index) => (
