@@ -25,15 +25,15 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="bg-secondary py-20 ">
+    <section className="bg-secondary px-4 lg:px-0 py-12 lg:py-20">
       <h1 className="idealist text-primary text-4xl text-center">
         Achieve Professional and Business Growth
       </h1>
-      <div className="flex justify-center py-16">
+      <div className="flex flex-col lg:flex-row lg:items-start items-center justify-center py-8 lg:py-16">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col w-[320px] mx-4 p-8 bg-white shadow-md"
+            className="flex flex-col w-[320px] mb-6 lg:mb-0 lg:mx-4 p-8 bg-white shadow-md"
           >
             <img
               src={feature.icon}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 const testimonials = [
@@ -30,6 +30,19 @@ const testimonials = [
 ];
 
 export default function Tetimonials() {
+  const [showArrows, setShowArrows] = useState(false);
+
+  useEffect(() => {
+    setShowArrows(window.innerWidth > 768);
+    const handleResize = () => {
+      setShowArrows(window.innerWidth > 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: true,
     dotsClass: "slick-dots slick-thumb",
@@ -37,6 +50,7 @@ export default function Tetimonials() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: showArrows,
   };
 
   return (
@@ -45,7 +59,7 @@ export default function Tetimonials() {
         What my clients say
       </h1>
       <img src="/svg/quote.svg" alt="quote" className="mx-auto" />
-      <Slider {...settings} className="w-[720px] mx-auto my-4">
+      <Slider {...settings} className="lg:w-[720px] mx-auto my-4">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="px-8 mb-4 mt-2">
             <p>{testimonial.description}</p>

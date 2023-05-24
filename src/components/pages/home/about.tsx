@@ -6,7 +6,7 @@ import React from "react";
 export default function About() {
   return (
     <section className="bg-primary flex justify-between">
-      <div className="text-white w-2/3 flex justify-center items-center">
+      <div className="text-white w-full px-4 py-12 lg:px-0 lg:py-0 lg:w-2/3 flex justify-center items-center">
         <div className="max-w-[620px]">
           <h1 className="font-medium text-2xl mb-4">
             Cleopatra Ogharadukun is a highly accomplished business development
@@ -25,7 +25,7 @@ export default function About() {
           </Link>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative hidden lg:block ">
         <Image
           src={"/images/about.png"}
           quality={100}

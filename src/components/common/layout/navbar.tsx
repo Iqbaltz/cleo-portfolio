@@ -67,7 +67,7 @@ export default function Navbar() {
   const isWhiteLogo = pathname === "/about";
   return (
     <>
-      <header className="flex justify-between p-8 absolute top-0 z-30 0 w-full px-12">
+      <header className="flex justify-between items-center absolute top-0 z-30 0 w-full py-8 px-4 lg:px-12 lg:py-8">
         <Link href="/">
           <img
             src={`${isWhiteLogo ? "/svg/logo-white.svg" : "/svg/logo.svg"}`}

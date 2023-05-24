@@ -9,7 +9,7 @@ export default function hero() {
       className="flex flex-col pt-32 lg:pt-0 lg:flex-row justify-between relative"
       id="hero"
     >
-      <div className="flex items-center relative justify-center w-full lg:w-1/2 px-24 lg:min-h-screen">
+      <div className="flex items-center relative justify-center w-full lg:w-1/2 px-4 lg:px-24 lg:min-h-screen">
         <Image
           src="/images/hero.png"
           quality={100}
@@ -18,9 +18,9 @@ export default function hero() {
           width={540}
           alt="hero"
         />
-        <div className="absolute h-[693px] w-[540px] bg-secondary bottom-0 left-0 -z-10"></div>
+        <div className="absolute h-[693px] w-full lg:w-[540px] bg-secondary bottom-0 left-0 -z-10"></div>
       </div>
-      <div className="flex flex-col w-full lg:w-1/2 justify-between pb-16 px-8 lg:py-40 lg:pl-16 pr-20">
+      <div className="flex flex-col w-full lg:w-1/2 justify-between pb-16 px-4 md:px-8 lg:py-40 lg:pl-16 lg:pr-20">
         <div className="mt-8">
           <h1 className="idealist text-6xl text-primary mb-8">
             Cleopatra Ogharadukun
