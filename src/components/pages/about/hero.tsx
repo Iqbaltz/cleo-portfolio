@@ -6,13 +6,14 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col items-center px-4 lg:px-0 lg:flex-row">
       <div className="flex justify-center items-center lg:w-1/2 mt-40 lg:mt-0">
         <Image
+          className="xl:w-[400px] 2xl:w-[500px]"
           width={520}
           height={780}
           quality={100}
           src="/images/about-hero.png"
           alt="about"
         />
-        <div className="w-[78%] h-1/2 lg:w-[520px] lg:h-[780px] top-0 left-0 bg-primary absolute -z-10"></div>
+        <div className="w-[78%] h-1/2 lg:w-[400px] 2xl:w-[520px] lg:h-[620px] 2xl:h-[780px] top-0 left-0 bg-primary absolute -z-10"></div>
       </div>
       <div className="flex justify-start items-center py-10 lg:py-0 lg:w-1/2">
         <div className="max-w-[600px]">

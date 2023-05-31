@@ -12,13 +12,14 @@ export default function hero() {
       <div className="flex items-center relative justify-center w-full lg:w-1/2 px-4 lg:px-24 lg:min-h-screen">
         <Image
           src="/images/hero.png"
+          className="xl:w-[440px] 2xl:w-[540px]"
           quality={100}
           priority={true}
           height={693}
           width={540}
           alt="hero"
         />
-        <div className="absolute h-[693px] w-full lg:w-[540px] bg-secondary bottom-0 left-0 -z-10"></div>
+        <div className="absolute h-[693px] w-full xl:h-[560px] xl:w-[440px] 2xl:w-[540px] bg-secondary bottom-0 left-0 -z-10"></div>
       </div>
       <div className="flex flex-col w-full lg:w-1/2 justify-between pb-8 lg:pb-16 px-4 md:px-8 lg:py-40 lg:pl-16 lg:pr-20">
         <div className="mt-8">
