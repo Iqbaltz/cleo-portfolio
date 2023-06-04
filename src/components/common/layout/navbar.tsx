@@ -12,6 +12,10 @@ const menus = [
     link: "/about",
   },
   {
+    name: "Blog",
+    link: "https://medium.com/@cleopatraogharadukun",
+  },
+  {
     name: "Solutions",
     link: "/solutions",
   },
@@ -93,7 +97,7 @@ export default function Navbar() {
             {menus.map((menu, index) => (
               <li
                 key={index}
-                className="text-3xl lg:text-5xl font-semibold text-primary mb-8 cursor-pointer"
+                className="mb-6 lg:mb-5 2xl:mb-8 text-3xl 2xl:text-5xl font-semibold text-primary cursor-pointer"
               >
                 <Link href={menu.link} className="hover:underline">
                   {menu.name}
@@ -109,9 +113,13 @@ export default function Navbar() {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 bg-primary mr-4"
+              className="flex items-center justify-center w-8 h-8 2xl:w-10 2xl:h-10 bg-primary mr-4"
             >
-              <img className="w-8" src={social.icon} alt={social.name} />
+              <img
+                className="w-6 2xl:w-8"
+                src={social.icon}
+                alt={social.name}
+              />
             </a>
           ))}
         </div>
